@@ -47,5 +47,9 @@ for (let i = 0; i < entradas.length; i++) { //for (let i = 0; i < entradas)
   const entrada = entradas[i];
   const somatorio = entrada[0] * w1 + entrada[1] * w2 + b;
   const saidaCalculada = stepFunction(somatorio);
-  console.log(`Entrada: ${entrada[0]}, ${entrada[1]} - Saída: ${saidaCalculada}`);
+  //console.log(`Entrada: ${entrada[0]}, ${entrada[1]} - Saída: ${saidaCalculada}`);
+  let idOutput = `output--${i}`;
+  const perceptronOutput = document.getElementById(idOutput);
+  let msgOutput = `<b>Entrada:</b> ${entrada[0]}, ${entrada[1]} - <b>Saída:</b> ${saidaCalculada}`;
+  perceptronOutput.innerHTML = msgOutput;
 }
