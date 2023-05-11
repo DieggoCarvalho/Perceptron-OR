@@ -7,18 +7,19 @@ body {
 table {
     text-align: center;
     margin: 0 auto;
-    width: 30vw;
+    width: 30vw !important;
 }
-
+/* 
 table, td {
     border-collapse: collapse;
     border: 1px solid #000000;
     padding: 10px;
-}
+} */
 
 h1 {
     font-size: 2rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 th {
